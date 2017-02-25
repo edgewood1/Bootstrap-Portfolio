@@ -1,0 +1,198 @@
+#body {
+  background-color: #C0C0C0
+
+  }
+
+/* HEADER */
+
+.header-header {
+  text-align: center;
+  background-color: #65E8C5;
+  /*overflow:auto;*/
+}
+
+img {
+  /*float: left;*/
+  width: 70%;
+  /*margin-left: 15%*/
+}
+
+h1 {
+  /*margin: 4% 0% auto 13%;*/
+  /*padding: 0px;*/
+  font-family: garamond;
+  font-size: 300%;
+  /*float: left;*/
+}
+
+/*below, a tight BOX around nav buttons*/
+.nav-header{overflow: auto; margin-top: 2%;} 
+
+.ul-header {
+  /*float:right;*/
+    list-style-type: none;
+    /*width: 45%;*/
+    /*margin: 0 auto 0 auto;*/
+    text-align:center;
+    /*margin:left: 60%;*/
+    /*display: inline-block;*/
+}
+
+/*BUTTON CONTROLS */
+li.li-header {
+  display: inline-block;
+  /*text-align: center;*/
+  border: 1px outset gray; 
+  border-radius: 15%;
+padding: 0% 3%;
+  background-color: #FFFAF0;
+
+  
+  }
+
+/*DISABLE ANCHOR*/
+a.a-header {
+    /*display: block;*/
+    
+    /*text-decoration: none;*/
+}
+
+/*TEXT INSIDE BUTTONS*/
+h3 {
+  font-size: 150%; /*SIZE OF TEXT INSIDE BUTTON*/
+  color: black; 
+  text-align: center;
+  font-family: garamond; 
+  font-weight: 100;
+}
+
+/*  MIDDLE SECTION ROW */
+section {
+  /*overflow: auto;*/
+  background-color: #B4E0B4;
+  /*height: 95%;*/
+}
+/*BOX'S RELATIONSHIP TO SECTION*/
+aside {
+  /*float: left;*/
+  /*width: 20%;*/
+  margin-top: 5%;
+  border-radius: 12%;
+  background-color:   #FFFAF0;
+  text-align: center;
+  
+}
+
+header.aside {
+  text-align: center
+}
+
+hr {
+  border-color: inherit;
+  /*width: 75%;*/
+}
+/*BOX AROUND ICONS*/
+.nav-aside {
+  /*float: left;*/
+  /*display:inline-block;*/
+  overflow:auto;
+}
+/*BOX AROUND ICONS*/
+.ul-aside {
+    /*list-style-type: none;*/
+    /*float:left;*/
+    padding: 0;
+    text-align: center;
+    /*display:inline-block;*/
+    /*margin 0 auto 0 auto;*/
+    /*margin-left: 17%;*/
+}
+
+/* THE ICONS BORDER? */
+
+.li-aside {
+  display: inline-block;
+  /*float: left;*/
+  /*text-align: center;*/
+  /*margin 0 auto 0 auto;*/
+  
+}
+
+/*ICON ITSELF*/
+
+.a-aside { 
+  color: black;
+  padding: 25%;
+  /*text-align:center;*/
+  font-size: 1.75em;
+}
+
+/*  BOTTOM */
+
+footer {
+  background-color: #65E8C5;
+  text-align: center;
+  color: black;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+h4 {text-align: center;}
+
+@media (max-width: 1200px) {.ul-header {clear: left;}
+img {width: 20%;} } 
+/* ______________________________________________________FIRST BREAKPOINT*/
+/*@media (max-width: 886px){
+
+h1 {
+  margin-top: 0%;
+  font-size: 275%;
+}
+
+ul.ul-header { 
+    width: 70%;  
+}
+
+a.a-header {
+    display: inline; /*was block*/
+    /*}
+
+article.article {
+  width: 90%;
+}
+
+aside {
+  width: 80%;
+    margin: 3% 8% 3% 11%;
+  }
+}
+/*----------------------------------------------------SMALLEST */
+/*@media (max-width:455px)
+   
+   {img 
+    {
+    float: none;
+    width: 20%;
+    margin: 0;
+    text-align:center;
+}
+
+   h1 {
+    float:none;
+    margin:0 auto 0 auto;
+    width:60%;
+    font-size: 225%;
+}
+
+ul.ul-header {
+    /*display: inline; was inline-block  */
+ /*   width: 80%;  
+    margin: 0 auto 0 auto;
+}
+
+a.a-header {
+    display: inline; /*was block*/
+  /*  width: 100px;
+     }
+h3 {font-size: 55%; padding: 3%;}
+
+}
