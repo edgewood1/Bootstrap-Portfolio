@@ -1,11 +1,7 @@
-
-
 .article {
   overflow: auto;
-  /*width: 33%;*/
   margin-top: 5%;
   margin-bottom: 11%;
-  /*padding: 3% 1% 3% 1%;*/
   border-radius: 12%;
   background-color:   #FFFAF0;
 }
@@ -15,18 +11,36 @@ h2 {
   font-size: 200%;
   font-family: garamond;
 }
+
+.images {
+  overflow: auto;
+}
  
-img.a {
-  /*position: relative;*/
+figure {
+  position: relative;
   float: left;
   width: 50%;
-  height: 50%;
+  margin-bottom: 1%;
+  text-align: center;
+  padding: 1%;
+    }
+
+img.a {
+  float: left;
+  width: 100%; 
   margin-bottom: 4%;
   text-align: center;
   padding: 1%;
- 
 }
 
+  figcaption {position: absolute;
+    color: white;
+    bottom: 30%;
+    left: 20%;
+    text-family: garamond;
+    background: green;
+    width: 70%;
+  }
 
 
 hr {
@@ -34,6 +48,7 @@ hr {
   text-align: center;
   width: 75%;
 }
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx breakpoint 1*/
 
 @media (max-width: 1220px) { 
   aside {
@@ -41,36 +56,46 @@ hr {
     width: 75%; 
     margin: 5% auto;
   }
+  
   img {
     width: 20%;
     } 
+  
   img.a {
-    width: 50%;
-  padding: 1% 5%;
+    width: 100%;
+    clear: left;
     } 
+
   .article {
     margin: 5% auto;
     clear: left;
     width: 75%;
-/* WHY DO I HAVE TO SET THESE WIDTHS, ETC IF THIS IS BOOTSTRAPPED?*/
 }
 
 .a-aside { 
-  
-  /*text-align:center;*/
   font-size: 2.25em;
 }
 }
 
-@media (max-width: 487px) { 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx break point 2*/
+
+@media (max-width: 557px) { 
   
   img {
     width: 30%;
     } 
+
+  figcaption {
+    clear: left;
+  }
+  
+  figure {
+    width: 100%;
+    clear: left;
+  }
   
   img.a {
-    width: 75%;
-    margin-left: 10%;
+    width: 100%;
     clear: left;
     } 
 
@@ -78,32 +103,43 @@ hr {
     margin: 5% auto;
     clear: left;
     width: 75%;
-/* WHY DO I HAVE TO SET THESE WIDTHS, ETC IF THIS IS BOOTSTRAPPED?*/
 }
 
 .a-aside { 
-  /*text-align:center;*/
   font-size: 2.25em;
 }
 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxlast breakpoint*/
+
 @media (max-width: 175px) { 
   
-  }
   img {
-    width: 40%;
+    width: 50%;
     } 
+  
   img.a {
-    width: 70%;
   padding: 1% 5%;
     } 
-    h2{font-size: 150%;}
+  
+  h2{
+    font-size: 150%;
+  }
+  
   .article {
     margin: 5% auto;
     clear: left;
     width: 75%;
-/* WHY DO I HAVE TO SET THESE WIDTHS, ETC IF THIS IS BOOTSTRAPPED?*/
-}
-.nav-header{padding: 0; margin: 0;}
-.ul-header{padding: 0;}
-h1{font-size: 180%;}
+    }
+
+    .nav-header{
+      padding: 0; 
+      margin: 0;
+    }
+    .ul-header{
+      padding: 0;
+    }
+    
+    h1{
+      font-size: 180%;
+    }
 }
